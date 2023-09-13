@@ -25,7 +25,7 @@
 
 
         $query    = "INSERT into `users` (name, age, username, password)
-                     VALUES ('$name','$age','$username', '" . md5($password) . "')";
+                     VALUES ('$name','$age','$username', '$password')";
         $result   = mysqli_query($con, $query);
         if ($result) {
             echo "<div class='form'>
