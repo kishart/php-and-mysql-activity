@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8"/>
     <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@300;700&family=Signika&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,7 +29,7 @@
 
 
         $query    = "INSERT into `users` (name, age, username, password)
-                     VALUES ('$name','$age','$username', '$password')";
+                     VALUES ('$name','$age','$username','" . md5($password) . "')";
         $result   = mysqli_query($con, $query);
         if ($result) {
             echo "<div class='form'>
@@ -41,7 +45,7 @@
     } else {
 ?>
     <form class="form" action="" method="post">
-        <h1 class="login-title">Registration</h1>
+        <h1 class="login-title reg">Registration</h1>
 
         <label for="name">Name</label>
         <input type="text" class="login-input" name="name" placeholder="name" required />
