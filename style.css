@@ -63,3 +63,24 @@ h3 {
   font-weight: normal;
   text-align: center;
 }
+.pic {
+  margin: 10%;
+  width: 50%;
+}
+img {
+  width: 80%;
+  height: 150%;
+  padding-left: 40%;
+  margin-top: -10%;
+}
+button {
+  font-family: "Signika", sans-serif;
+  background: #27005d;
+  width: 50%;
+  height: 25px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 55%;
+  cursor: pointer;
+}

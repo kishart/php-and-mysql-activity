@@ -10,10 +10,10 @@ include("auth_session.php");
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="form">
-        <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
-        <p>You are now user dashboard page.</p>
-        <p><a href="logout.php">Logout</a></p>
+    <div class="pic">
+       
+        <img src="./hak.jpg" alt="bunny">
+        <button style="color:white;"><a href="logout.php">Logout</a></button>
     </div>
 </body>
 </html>
