@@ -51,7 +51,7 @@
         <input type="text" class="login-input" name="name" placeholder="name" required />
 
         <label for="age">Age</label>
-        <input type="text" class="login-input" name="age" placeholder="age" required>
+        <input type="number" class="login-input" name="age" placeholder="age" required>
 
         <label for="username">Username</label>
         <input type="username" class="login-input" name="username" placeholder="username" required>
